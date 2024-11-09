@@ -42,7 +42,13 @@ public class OptionalTest {
         // 如果內部的t是空的，則返回orElse() 方法中的參數t1
         Girl girl2 = girl1.orElse(new Girl("小美"));
         System.out.println(girl2);
+        System.out.println(Thread.currentThread());
+        ThreadLocal<String> str = new ThreadLocal<>();
+        str.set("HELLO");
+        System.out.println(str.get());
+        str.remove();
 
+        System.out.println(str.get());
     }
 
     public String getGirlName(Boy boy) {

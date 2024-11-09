@@ -18,10 +18,6 @@ import java.util.function.Supplier;
  * 二、數組引用
  *      大家可以把數組看作是一個特殊的類，則寫法與構造器引用一致。
  *
- *
- *
- *
- *
  * @author USER
  * @date 2024-09-26 上午 06:27
  */
